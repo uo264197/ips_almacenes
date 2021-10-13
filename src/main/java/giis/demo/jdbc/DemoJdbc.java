@@ -1,5 +1,8 @@
 package giis.demo.jdbc;
 import java.sql.*;
+
+
+
 import java.util.List;
 import java.util.Map;
 
@@ -15,6 +18,11 @@ import giis.demo.util.UnexpectedException;
 /**
  * Ejemplos de acceso a una base de datos con conexion JDBC y base de datos Sqlite
  */
+
+
+
+//agggggggggggggggggggggggggggggg
+
 public class DemoJdbc {
 	//informacion de conexion a la base de datos utilizada
 	public static final String DRIVER="org.sqlite.JDBC";
