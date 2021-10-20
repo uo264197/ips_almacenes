@@ -11,6 +11,8 @@ import javax.swing.JScrollPane;
 import javax.swing.JList;
 import javax.swing.JButton;
 import java.awt.GridLayout;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class RecogidaDeOT extends JFrame {
 
@@ -78,6 +80,14 @@ public class RecogidaDeOT extends JFrame {
 	private JButton getBtnNewButton() {
 		if (btnNewButton == null) {
 			btnNewButton = new JButton("Aceptar");
+			btnNewButton.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					if (list.getSelectedIndex()!=-1) {
+						
+					}
+				}
+			});
+			btnNewButton.setEnabled(false);
 		}
 		return btnNewButton;
 	}
